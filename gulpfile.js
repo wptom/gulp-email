@@ -19,7 +19,10 @@ gulp.task('build-pug', function() {
 
 gulp.task('build-html', function() {
     return gulp.src('app/*.html')
-        .pipe(inlineCss())
+        .pipe(inlineCss({
+            removeStyleTags: false,
+            applyStyleTags: true
+        }))
         .pipe(gulp.dest('output/'));
 });
 

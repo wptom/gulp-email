@@ -2,29 +2,47 @@
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head> 
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Nový title</title>
-</head>
-<body>
     <style>
+        h1, h2, h3, h4, h5, h6, p { margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; }
+        body { font-family: Arial, Helvetica, sans-serif; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; -webkit-text-size-adjust:none }
+        strong { font-weight: bold; }
         .d-block { display: block; }
         .d-inline-block { display: inline-block; }
         .b-none { border: none; }
-        .td-side { width: 100px; }
-        .td-center { width: 400px; }
-        .table-basic-style { border: 1px solid red; background-color: yellow; }
         .text-align-center { text-align: center; }
-    </style>
 
-    <table class="table-basic-style" width="600" align="center" cellspacing="0" cellpadding="0">
+        @media only screen and (max-device-width: 767px), only screen and (max-width: 767px) {
+            .mobile-w100 { width: 100% !important; }
+            .mobile-visible { display: block !important; }
+            .mobile-image { width: 100%; height: auto !important; }
+        }
+        @media only screen and (min-device-width: 768px), only screen and (min-width: 768px) {
+            .desktop-hidden { display: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
         <tr>
-            <td>1</td>
-            <td class="td-center text-align-center"><img class="d-inline-block" src="https://dummyimage.com/600x400/000/fff" width="400" alt=""></td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td><img class="d-block" src="https://dummyimage.com/600x400/000/fff" width="500" alt=""></td>
-            <td>&nbsp;</td>
+            <td align="center">
+                <table class="mobile-w100 mobile-color" width="600" align="center" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>
+                            <h1>Heading example</h1>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img class="d-block mobile-image" src="https://dummyimage.com/600x400/000/fff" width="600" height="400" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img class="d-block mobile-image" src="https://dummyimage.com/600x400/c0c0c0/fff" width="600" height="400" alt=""></td>
+                    </tr>
+                </table>
+            </td>
         </tr>
     </table>
 </body>
