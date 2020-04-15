@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="x-apple-disable-message-reformatting">
+    <title>Škoda Connect - Infotainment</title>
+    <style type="text/css">
+        @font-face{
+            font-family:"SKODA Next W01 Regular";
+            src:url("https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/fonts/7c819ec9-a3c1-41d7-99ba-ad3a7ba9ba6b.eot?#iefix");
+            src:url("https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/fonts/7c819ec9-a3c1-41d7-99ba-ad3a7ba9ba6b.eot?#iefix") format("eot"),url("https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/fonts/7ce79b42-a287-47d8-8269-fbdea3f24ad3.woff2") format("woff2"),url("https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/fonts/9e911125-957e-462c-bc02-f5dff3de74cf.woff") format("woff"),url("https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/fonts/4538109e-9c89-4a87-bc49-469e9560001e.ttf") format("truetype"),url("https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/fonts/38c8477e-9ae4-44c5-994a-6a139578ead0.svg#38c8477e-9ae4-44c5-994a-6a139578ead0") format("svg");
+            font-style: normal;
+            font-weight: normal;
+            mso-font-alt: 'Arial';
+        }
+
+        @font-face{
+            font-family:"SKODA Next W01 Bold";
+            src:url("https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/fonts/9547b6d7-3cdd-41a2-ad10-bddd4dd65c1b.eot?#iefix");
+            src:url("https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/fonts/9547b6d7-3cdd-41a2-ad10-bddd4dd65c1b.eot?#iefix") format("eot"),url("https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/fonts/ce0897d0-0c7c-4624-a0ce-6916cc092ba2.woff2") format("woff2"),url("https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/fonts/24324ebe-600f-4fdc-8565-6ebff742f25a.woff") format("woff"),url("https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/fonts/da0f29ed-a4ae-456e-9fd1-277067a800dc.ttf") format("truetype"),url("https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/fonts/1133853c-a769-44dc-816d-00606fe2b9df.svg#1133853c-a769-44dc-816d-00606fe2b9df") format("svg");
+            font-style: normal;
+            font-weight: bold;
+            mso-font-alt: 'Arial';
+        }
+
+        h1, h2, h3, h4, h5, h6, p, a { margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; font-family: 'SKODA Next W01 Regular', Arial, Helvetica, sans-serif; color: #000000; }
+        body { margin: 0px 0px 0px 0px; }
+        strong { font-family: 'SKODA Next W01 Bold', Arial, Helvetica, sans-serif; font-weight: bold; }
+        .w100 { width: 100%; }
+        .d-block { display: block; }
+        .d-inline-block { display: inline-block; }
+        .d-none { display: none; }
+        .b-none { border: none; }
+        .text-align-center { text-align: center; }
+        table { font-family: 'SKODA Next W01 Regular', Arial, Helvetica, sans-serif; }
+        p { font-size: 14px; line-height: 20px; }
+        a.link:link,
+        a.link:visited,
+        a.link:hover,
+        a.link:active { color: #4ba82e !important; text-decoration: underline !important; }
+        .paragraph { font-size: 13px; }
+        .paragraph-small { font-size: 10px; }
+        .list-img { padding-right: 30px; padding-left: 10px; }
+
+        .desktop-padding-x { padding-right: 85px; padding-left: 85px; }
+        .desktop-padding-x2 { padding-right: 110px; padding-left: 110px; }
+        .desktop-padding-x3 { padding-right: 80px; padding-left: 80px; }
+        .desktop-padding-x4 { padding-right: 60px; padding-left: 60px; }
+        .bg-gray { background-color: #e8e8e8; }
+        .bg-green { background-color: #4ba82e; }
+        .title { font-size: 15px; font-weight: bold; font-family: 'SKODA Next W01 Bold', Arial, Helvetica, sans-serif; }
+        .btn { display: inline-block; font-size: 12px; font-family: 'SKODA Next W01 Bold', Arial, Helvetica, sans-serif; font-weight:bold; color: #ffffff; text-decoration: none; text-transform: uppercase; text-decoration: none; border-radius: 0px; padding: 10px 30px; border: 1px solid #4ba82e; background-color: #4ba82e; }
+
+        .copy { font-size: 10px; line-height: 11px; color: #000; }
+        .copy__link { color: #000; text-decoration: none; }
+
+        @media only screen and (max-device-width: 767px), only screen and (max-width: 767px) {
+            .mobile-hidden { display: none !important; }
+            .mobile-visible { display: block !important; }
+            .mobile-visible-table { display: table !important; }
+            .mobile-w100 { width: 100% !important; }
+            .mobile-text-center { text-align: center; }
+            .mobile-display-inline-block { display: inline-block !important; }
+            .mobile-padding-x { padding-left: 20px !important; padding-right: 20px !important; }
+            .mobile-image { display: block; width: 100% !important; height: auto !important; }
+
+            .desktop-padding-x { padding-right: 20px !important; padding-left: 20px !important; }
+            .desktop-padding-x2 { padding-right: 20px !important; padding-left: 20px !important; }
+            .desktop-padding-x3 { padding-right: 20px !important; padding-left: 20px !important; }
+            .desktop-padding-x4 { padding-right: 20px !important; padding-left: 20px !important; }
+            .list-number { padding-top: 20px; padding-bottom: 20px; }
+        }
+        @media only screen and (min-device-width: 768px), only screen and (min-width: 768px) {
+            .desktop-hidden { display: none !important; }
+        }
+    </style>
+</head>
+<body>
+<center>
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="center">
+                <table class="mobile-w100 mobile-color" width="720" align="center" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td><p class="paragraph-small text-align-center">If you have trouble viewing this document, please click
+                            <a href="#" class="link">here</a></p></td>
+                    </tr>
+                    <tr>
+                        <td><img class="d-block mobile-image" src="https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/images/df199894.jpg" width="720" height="444" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td class="desktop-padding-x">
+                            <table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="40">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="paragraph"><strong>Dear Mr./Mrs. XXX,</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="10" style="font-size: 1px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td><p class="paragraph"><strong>We would like to inform you about expiration of
+                                        your ŠKODA Connect
+                                        services.</strong></p></td>
+                                </tr>
+                                <tr>
+                                    <td height="10" style="font-size: 1px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td><p class="paragraph">ŠKODA Connect enables easy access to the most important
+                                        vehicle functions,
+                                        either using the ŠKODA Connect Portal, or ŠKODA Connect Application.</p></td>
+                                </tr>
+                                <tr>
+                                    <td height="10" style="font-size: 1px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td><p class="paragraph">Being online and connected to your car in every situation
+                                        can be useful.</p></td>
+                                </tr>
+                                <tr>
+                                    <td height="10" style="font-size: 1px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td><p class="paragraph">Please see the available services bellow which may be no
+                                        longer reachable in case of expiration of ŠKODA Connect services. For more
+                                        information, please visit the ŠKODA Connect Portal.</p></td>
+                                </tr>
+                                <tr>
+                                    <td height="50" style="font-size: 1px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class="desktop-padding-x2 bg-gray">
+                            <table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="45" style="font-size: 1px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-align-center">
+                                        <p class="paragraph"><strong>Your ŠKODA Connect services will expire on
+                                        30.7.2018.</strong><br><strong>To stay connected, you can extend the services at the ŠKODA Connect Portal.</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="20" style="font-size: 1px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table align="center" style="width: 280px;" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td align="center" class="bg-green"><a href="https://skoda-connect.com/portal/en_GB/web/guest/market-selection" target="_blank" class="btn">Go to Škoda Connect portal</a></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="50" style="font-size: 1px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class="desktop-padding-x2">
+                            <table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="45" style="font-size: 1px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-align-center">
+                                        <h3 class="title">ŠKODA Connect services that you may miss*</h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="45" style="font-size: 1px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-gray">
+                                        <table align="center" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td height="15" style="font-size: 1px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-align-center"><h2 class="title">INFOTAINMENT
+                                                    ONLINE</h2></td>
+                                            </tr>
+                                            <tr>
+                                                <td height="15" style="font-size: 1px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="15" style="font-size: 1px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td class="list-img">
+                                                    <img class="d-block" src="https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/images/df177918.png" width="70" height="70" alt="">
+                                                </td>
+                                                <td>
+                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td height="10" style="font-size: 1px;">&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><p class="paragraph">Car access to information from the
+                                                                internet without the need for any other additional
+                                                                device.</p></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="30" style="font-size: 1px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="list-img">
+                                                    <img class="d-block" src="https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/images/df177917.png" width="70" height="70" alt="">
+                                                </td>
+                                                <td>
+                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td height="10" style="font-size: 1px;">&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><p class="paragraph">Route planning from the comfort of your home and transfer of the route directly to the car.</p></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="30" style="font-size: 1px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="list-img">
+                                                    <img class="d-block" src="https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/images/df177916.png" width="70" height="70" alt="">
+                                                </td>
+                                                <td>
+                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td height="10" style="font-size: 1px;">&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><p class="paragraph">Online information about heavy traffic and free parking places on the way.</p></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="30" style="font-size: 1px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="desktop-padding-x3">
+                            <table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td><p class="paragraph">*Available services may vary. For more information, please visit the ŠKODA Connect Portal.</p></td>
+                                </tr>
+                                <tr>
+                                    <td height="15" style="font-size: 1px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td><p class="paragraph">Find more about ŠKODA Connect services <a
+                                            href="http://www.skoda-auto.com/world/connectivity"
+                                            class="link">here</a>.</p></td>
+                                </tr>
+                                <tr>
+                                    <td height="15" style="font-size: 1px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td><p class="paragraph">We wish you safe peaceful kilometres and a multitude of magnificent experiences!</p></td>
+                                </tr>
+                                <tr>
+                                    <td height="45" style="font-size: 1px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td><p class="paragraph"><strong>Your ŠKODA Connect Team</strong></p></td>
+                                </tr>
+                                <tr>
+                                    <td height="45" style="font-size: 1px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="desktop-padding-x4 bg-gray">
+                            <table class="w100" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="15" style="font-size: 1px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="w100" border="0" cellspacing="0" cellpadding="0">
+                                            <tr class="d-none mobile-visible">
+                                                <td align="center" class="d-none mobile-visible">
+                                                    <p class="paragraph-small">SKODA-AUTO.CZ | ŠKODA INFOLINE:
+                                                        800 600 000</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left" class="mobile-hidden">
+                                                    <p class="paragraph-small">SKODA-AUTO.CZ | ŠKODA INFOLINE:
+                                                    800 600 000</p>
+                                                </td>
+                                                <td align="right">
+                                                    <table class="mobile-text-center mobile-w100" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td><a href="https://twitter.com/skodauk"><img src="https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/images/df177859.png" width="30" height="30" alt=""></a>
+                                                                <a href="https://www.facebook.com/skoda/"><img src="https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/images/df177863.png" width="30" height="30" alt=""></a>
+                                                                <a href="https://www.youtube.com/user/skoda/"><img src="https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/images/df177860.png" width="30" height="30" alt=""></a>
+                                                                <a href="https://www.instagram.com/skodagram/"><img src="https://www.deloitte-digital.cz/email-attachments/sa/connect-infotainment/images/df177858.png" width="30" height="30" alt=""></a></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="10" style="font-size: 1px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+    </table>
+</center>
+</body>
+</html>
